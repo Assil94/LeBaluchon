@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE0FAF4825B3640000E753BA /* ExchangeRateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0FAF4725B3640000E753BA /* ExchangeRateViewModel.swift */; };
+		EE295B0C25BA0B9800BD6587 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE295B0B25BA0B9800BD6587 /* WeatherViewModel.swift */; };
+		EE2ABA7825BB38290023DBD6 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2ABA7725BB38290023DBD6 /* WeatherData.swift */; };
+		EE2EB85525B3A1B300996206 /* PresentExchangeRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2EB85425B3A1B300996206 /* PresentExchangeRateController.swift */; };
+		EE2EB85F25B3B47500996206 /* Call in Resources */ = {isa = PBXBuildFile; fileRef = EE2EB85E25B3B47500996206 /* Call */; };
+		EE49371926D674B5001FD414 /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49371826D674B5001FD414 /* WeatherClient.swift */; };
+		EE55107A25A78F2C00D77D7C /* NetWorkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE55107925A78F2C00D77D7C /* NetWorkError.swift */; };
+		EE5510B025A7950800D77D7C /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE5510AE25A7950800D77D7C /* ApiKeys.plist */; };
+		EE5510B125A7950800D77D7C /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5510AF25A7950800D77D7C /* ApiKeys.swift */; };
+		EE5510C025A7981E00D77D7C /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5510BE25A7981E00D77D7C /* FakeResponseData.swift */; };
+		EE5510C125A7981E00D77D7C /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5510BF25A7981E00D77D7C /* URLSessionFake.swift */; };
+		EE7B00EF259D0F7C00FD5AAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B00EE259D0F7C00FD5AAB /* AppDelegate.swift */; };
+		EE7B00F1259D0F7C00FD5AAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B00F0259D0F7C00FD5AAB /* SceneDelegate.swift */; };
+		EE7B00F6259D0F7C00FD5AAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7B00F4259D0F7C00FD5AAB /* Main.storyboard */; };
+		EE7B00F8259D0F7E00FD5AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7B00F7259D0F7E00FD5AAB /* Assets.xcassets */; };
+		EE7B00FB259D0F7E00FD5AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7B00F9259D0F7E00FD5AAB /* LaunchScreen.storyboard */; };
+		EE7B0106259D0F7E00FD5AAB /* SimpleTravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B0105259D0F7E00FD5AAB /* SimpleTravelTests.swift */; };
+		EE7B0111259D0F7E00FD5AAB /* SimpleTravelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B0110259D0F7E00FD5AAB /* SimpleTravelUITests.swift */; };
+		EE7B012C259D120500FD5AAB /* ExchangeRateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B012B259D120500FD5AAB /* ExchangeRateService.swift */; };
+		EE7B0131259D16F300FD5AAB /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B0130259D16F300FD5AAB /* Rates.swift */; };
+		EE830C0E26FAA6B0004EAC6A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE830C0D26FAA6B0004EAC6A /* DateFormatter.swift */; };
+		EE830C1027000CE2004EAC6A /* TranslateClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE830C0F27000CE2004EAC6A /* TranslateClient.swift */; };
+		EEC6664125CA33B3008A18D6 /* PresentWeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6664025CA33B3008A18D6 /* PresentWeatherController.swift */; };
+		EEE1186325B65889001E7343 /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE1186225B65889001E7343 /* AlertVC.swift */; };
+		EEE1186B25B65B2D001E7343 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE1186A25B65B2D001E7343 /* Result.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE7B0102259D0F7E00FD5AAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE7B00E3259D0F7C00FD5AAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE7B00EA259D0F7C00FD5AAB;
+			remoteInfo = SimpleTravel;
+		};
+		EE7B010D259D0F7E00FD5AAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE7B00E3259D0F7C00FD5AAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE7B00EA259D0F7C00FD5AAB;
+			remoteInfo = SimpleTravel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE0FAF4725B3640000E753BA /* ExchangeRateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateViewModel.swift; sourceTree = "<group>"; };
+		EE295B0B25BA0B9800BD6587 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		EE2ABA7725BB38290023DBD6 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		EE2EB85425B3A1B300996206 /* PresentExchangeRateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentExchangeRateController.swift; sourceTree = "<group>"; };
+		EE2EB85E25B3B47500996206 /* Call */ = {isa = PBXFileReference; lastKnownFileType = text; path = Call; sourceTree = "<group>"; };
+		EE49371826D674B5001FD414 /* WeatherClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherClient.swift; sourceTree = "<group>"; };
+		EE55107925A78F2C00D77D7C /* NetWorkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkError.swift; sourceTree = "<group>"; };
+		EE5510AE25A7950800D77D7C /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		EE5510AF25A7950800D77D7C /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		EE5510BE25A7981E00D77D7C /* FakeResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
+		EE5510BF25A7981E00D77D7C /* URLSessionFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
+		EE7B00EB259D0F7C00FD5AAB /* SimpleTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7B00EE259D0F7C00FD5AAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE7B00F0259D0F7C00FD5AAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EE7B00F5259D0F7C00FD5AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE7B00F7259D0F7E00FD5AAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE7B00FA259D0F7E00FD5AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE7B00FC259D0F7E00FD5AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE7B0101259D0F7E00FD5AAB /* SimpleTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7B0105259D0F7E00FD5AAB /* SimpleTravelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTravelTests.swift; sourceTree = "<group>"; };
+		EE7B0107259D0F7E00FD5AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE7B010C259D0F7E00FD5AAB /* SimpleTravelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTravelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7B0110259D0F7E00FD5AAB /* SimpleTravelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTravelUITests.swift; sourceTree = "<group>"; };
+		EE7B0112259D0F7E00FD5AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE7B012B259D120500FD5AAB /* ExchangeRateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateService.swift; sourceTree = "<group>"; };
+		EE7B0130259D16F300FD5AAB /* Rates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
+		EE830C0D26FAA6B0004EAC6A /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		EE830C0F27000CE2004EAC6A /* TranslateClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateClient.swift; sourceTree = "<group>"; };
+		EEC6664025CA33B3008A18D6 /* PresentWeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentWeatherController.swift; sourceTree = "<group>"; };
+		EEE1186225B65889001E7343 /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
+		EEE1186A25B65B2D001E7343 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE7B00E8259D0F7C00FD5AAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7B00FE259D0F7E00FD5AAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7B0109259D0F7E00FD5AAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE0FAF4525B3635600E753BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EEC6664025CA33B3008A18D6 /* PresentWeatherController.swift */,
+				EE2EB85425B3A1B300996206 /* PresentExchangeRateController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EE0FAF4625B3636300E753BA /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EE0FAF4725B3640000E753BA /* ExchangeRateViewModel.swift */,
+				EE295B0B25BA0B9800BD6587 /* WeatherViewModel.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		EE55107625A787CA00D77D7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE5510AE25A7950800D77D7C /* ApiKeys.plist */,
+				EE5510AF25A7950800D77D7C /* ApiKeys.swift */,
+				EE7B00F7259D0F7E00FD5AAB /* Assets.xcassets */,
+				EE7B00EE259D0F7C00FD5AAB /* AppDelegate.swift */,
+				EE7B00F0259D0F7C00FD5AAB /* SceneDelegate.swift */,
+				EE7B00F9259D0F7E00FD5AAB /* LaunchScreen.storyboard */,
+				EE7B00FC259D0F7E00FD5AAB /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE55107725A788EB00D77D7C /* ExchangeRate */ = {
+			isa = PBXGroup;
+			children = (
+				EE7B0130259D16F300FD5AAB /* Rates.swift */,
+				EEE1186A25B65B2D001E7343 /* Result.swift */,
+			);
+			path = ExchangeRate;
+			sourceTree = "<group>";
+		};
+		EE55107825A7891900D77D7C /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		EE55108125A7916300D77D7C /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				EE2ABA7725BB38290023DBD6 /* WeatherData.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		EE5510C825A798A100D77D7C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EE7B0107259D0F7E00FD5AAB /* Info.plist */,
+				EE7B0105259D0F7E00FD5AAB /* SimpleTravelTests.swift */,
+				EE2EB85E25B3B47500996206 /* Call */,
+				EE5510BE25A7981E00D77D7C /* FakeResponseData.swift */,
+				EE5510BF25A7981E00D77D7C /* URLSessionFake.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		EE7B00E2259D0F7C00FD5AAB = {
+			isa = PBXGroup;
+			children = (
+				EE7B00ED259D0F7C00FD5AAB /* SimpleTravel */,
+				EE7B0104259D0F7E00FD5AAB /* SimpleTravelTests */,
+				EE7B010F259D0F7E00FD5AAB /* SimpleTravelUITests */,
+				EE7B00EC259D0F7C00FD5AAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE7B00EC259D0F7C00FD5AAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE7B00EB259D0F7C00FD5AAB /* SimpleTravel.app */,
+				EE7B0101259D0F7E00FD5AAB /* SimpleTravelTests.xctest */,
+				EE7B010C259D0F7E00FD5AAB /* SimpleTravelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE7B00ED259D0F7C00FD5AAB /* SimpleTravel */ = {
+			isa = PBXGroup;
+			children = (
+				EEE1186125B6587D001E7343 /* Extension */,
+				EE0FAF4625B3636300E753BA /* Scene */,
+				EE0FAF4525B3635600E753BA /* Controller */,
+				EE55107625A787CA00D77D7C /* Supporting Files */,
+				EE7B012A259D11EA00FD5AAB /* Networking */,
+				EE7B0121259D0F9400FD5AAB /* Model */,
+				EE7B00F4259D0F7C00FD5AAB /* Main.storyboard */,
+			);
+			path = SimpleTravel;
+			sourceTree = "<group>";
+		};
+		EE7B0104259D0F7E00FD5AAB /* SimpleTravelTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE5510C825A798A100D77D7C /* Tests */,
+			);
+			path = SimpleTravelTests;
+			sourceTree = "<group>";
+		};
+		EE7B010F259D0F7E00FD5AAB /* SimpleTravelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE7B0110259D0F7E00FD5AAB /* SimpleTravelUITests.swift */,
+				EE7B0112259D0F7E00FD5AAB /* Info.plist */,
+			);
+			path = SimpleTravelUITests;
+			sourceTree = "<group>";
+		};
+		EE7B0121259D0F9400FD5AAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE55108125A7916300D77D7C /* Weather */,
+				EE55107825A7891900D77D7C /* Translate */,
+				EE55107725A788EB00D77D7C /* ExchangeRate */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE7B012A259D11EA00FD5AAB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EE55107925A78F2C00D77D7C /* NetWorkError.swift */,
+				EE7B012B259D120500FD5AAB /* ExchangeRateService.swift */,
+				EE830C0F27000CE2004EAC6A /* TranslateClient.swift */,
+				EE49371826D674B5001FD414 /* WeatherClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		EEE1186125B6587D001E7343 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EEE1186225B65889001E7343 /* AlertVC.swift */,
+				EE830C0D26FAA6B0004EAC6A /* DateFormatter.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE7B00EA259D0F7C00FD5AAB /* SimpleTravel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE7B0115259D0F7E00FD5AAB /* Build configuration list for PBXNativeTarget "SimpleTravel" */;
+			buildPhases = (
+				EE7B00E7259D0F7C00FD5AAB /* Sources */,
+				EE7B00E8259D0F7C00FD5AAB /* Frameworks */,
+				EE7B00E9259D0F7C00FD5AAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleTravel;
+			productName = SimpleTravel;
+			productReference = EE7B00EB259D0F7C00FD5AAB /* SimpleTravel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE7B0100259D0F7E00FD5AAB /* SimpleTravelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE7B0118259D0F7E00FD5AAB /* Build configuration list for PBXNativeTarget "SimpleTravelTests" */;
+			buildPhases = (
+				EE7B00FD259D0F7E00FD5AAB /* Sources */,
+				EE7B00FE259D0F7E00FD5AAB /* Frameworks */,
+				EE7B00FF259D0F7E00FD5AAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE7B0103259D0F7E00FD5AAB /* PBXTargetDependency */,
+			);
+			name = SimpleTravelTests;
+			productName = SimpleTravelTests;
+			productReference = EE7B0101259D0F7E00FD5AAB /* SimpleTravelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE7B010B259D0F7E00FD5AAB /* SimpleTravelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE7B011B259D0F7E00FD5AAB /* Build configuration list for PBXNativeTarget "SimpleTravelUITests" */;
+			buildPhases = (
+				EE7B0108259D0F7E00FD5AAB /* Sources */,
+				EE7B0109259D0F7E00FD5AAB /* Frameworks */,
+				EE7B010A259D0F7E00FD5AAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE7B010E259D0F7E00FD5AAB /* PBXTargetDependency */,
+			);
+			name = SimpleTravelUITests;
+			productName = SimpleTravelUITests;
+			productReference = EE7B010C259D0F7E00FD5AAB /* SimpleTravelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE7B00E3259D0F7C00FD5AAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					EE7B00EA259D0F7C00FD5AAB = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					EE7B0100259D0F7E00FD5AAB = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = EE7B00EA259D0F7C00FD5AAB;
+					};
+					EE7B010B259D0F7E00FD5AAB = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = EE7B00EA259D0F7C00FD5AAB;
+					};
+				};
+			};
+			buildConfigurationList = EE7B00E6259D0F7C00FD5AAB /* Build configuration list for PBXProject "SimpleTravel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE7B00E2259D0F7C00FD5AAB;
+			productRefGroup = EE7B00EC259D0F7C00FD5AAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE7B00EA259D0F7C00FD5AAB /* SimpleTravel */,
+				EE7B0100259D0F7E00FD5AAB /* SimpleTravelTests */,
+				EE7B010B259D0F7E00FD5AAB /* SimpleTravelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE7B00E9259D0F7C00FD5AAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7B00FB259D0F7E00FD5AAB /* LaunchScreen.storyboard in Resources */,
+				EE2EB85F25B3B47500996206 /* Call in Resources */,
+				EE5510B025A7950800D77D7C /* ApiKeys.plist in Resources */,
+				EE7B00F8259D0F7E00FD5AAB /* Assets.xcassets in Resources */,
+				EE7B00F6259D0F7C00FD5AAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7B00FF259D0F7E00FD5AAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7B010A259D0F7E00FD5AAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE7B00E7259D0F7C00FD5AAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC6664125CA33B3008A18D6 /* PresentWeatherController.swift in Sources */,
+				EE295B0C25BA0B9800BD6587 /* WeatherViewModel.swift in Sources */,
+				EE0FAF4825B3640000E753BA /* ExchangeRateViewModel.swift in Sources */,
+				EE55107A25A78F2C00D77D7C /* NetWorkError.swift in Sources */,
+				EE5510B125A7950800D77D7C /* ApiKeys.swift in Sources */,
+				EE49371926D674B5001FD414 /* WeatherClient.swift in Sources */,
+				EEE1186B25B65B2D001E7343 /* Result.swift in Sources */,
+				EE7B0131259D16F300FD5AAB /* Rates.swift in Sources */,
+				EE2EB85525B3A1B300996206 /* PresentExchangeRateController.swift in Sources */,
+				EE830C0E26FAA6B0004EAC6A /* DateFormatter.swift in Sources */,
+				EE7B00EF259D0F7C00FD5AAB /* AppDelegate.swift in Sources */,
+				EE7B012C259D120500FD5AAB /* ExchangeRateService.swift in Sources */,
+				EE2ABA7825BB38290023DBD6 /* WeatherData.swift in Sources */,
+				EE830C1027000CE2004EAC6A /* TranslateClient.swift in Sources */,
+				EEE1186325B65889001E7343 /* AlertVC.swift in Sources */,
+				EE7B00F1259D0F7C00FD5AAB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7B00FD259D0F7E00FD5AAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7B0106259D0F7E00FD5AAB /* SimpleTravelTests.swift in Sources */,
+				EE5510C125A7981E00D77D7C /* URLSessionFake.swift in Sources */,
+				EE5510C025A7981E00D77D7C /* FakeResponseData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE7B0108259D0F7E00FD5AAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7B0111259D0F7E00FD5AAB /* SimpleTravelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE7B0103259D0F7E00FD5AAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE7B00EA259D0F7C00FD5AAB /* SimpleTravel */;
+			targetProxy = EE7B0102259D0F7E00FD5AAB /* PBXContainerItemProxy */;
+		};
+		EE7B010E259D0F7E00FD5AAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE7B00EA259D0F7C00FD5AAB /* SimpleTravel */;
+			targetProxy = EE7B010D259D0F7E00FD5AAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE7B00F4259D0F7C00FD5AAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE7B00F5259D0F7C00FD5AAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE7B00F9259D0F7E00FD5AAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE7B00FA259D0F7E00FD5AAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE7B0113259D0F7E00FD5AAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE7B0114259D0F7E00FD5AAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE7B0116259D0F7E00FD5AAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/SimpleTravel/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = assil.heddar.SimpleTravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE7B0117259D0F7E00FD5AAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/SimpleTravel/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = assil.heddar.SimpleTravel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE7B0119259D0F7E00FD5AAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleTravelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = assil.heddar.SimpleTravelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTravel.app/SimpleTravel";
+			};
+			name = Debug;
+		};
+		EE7B011A259D0F7E00FD5AAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleTravelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = assil.heddar.SimpleTravelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTravel.app/SimpleTravel";
+			};
+			name = Release;
+		};
+		EE7B011C259D0F7E00FD5AAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleTravelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = assil.heddar.SimpleTravelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleTravel;
+			};
+			name = Debug;
+		};
+		EE7B011D259D0F7E00FD5AAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleTravelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = assil.heddar.SimpleTravelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleTravel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE7B00E6259D0F7C00FD5AAB /* Build configuration list for PBXProject "SimpleTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7B0113259D0F7E00FD5AAB /* Debug */,
+				EE7B0114259D0F7E00FD5AAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE7B0115259D0F7E00FD5AAB /* Build configuration list for PBXNativeTarget "SimpleTravel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7B0116259D0F7E00FD5AAB /* Debug */,
+				EE7B0117259D0F7E00FD5AAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE7B0118259D0F7E00FD5AAB /* Build configuration list for PBXNativeTarget "SimpleTravelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7B0119259D0F7E00FD5AAB /* Debug */,
+				EE7B011A259D0F7E00FD5AAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE7B011B259D0F7E00FD5AAB /* Build configuration list for PBXNativeTarget "SimpleTravelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7B011C259D0F7E00FD5AAB /* Debug */,
+				EE7B011D259D0F7E00FD5AAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE7B00E3259D0F7C00FD5AAB /* Project object */;
+}
