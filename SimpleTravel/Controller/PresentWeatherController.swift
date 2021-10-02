@@ -24,7 +24,6 @@ class PresentWeatherController: UIViewController {
         self.UISearchBar.delegate = self
     }
 
-    
    private func getWeather(city: String) {
         me.getWeather(city: city)
         me.weatherHandler = { [weak self] weather in

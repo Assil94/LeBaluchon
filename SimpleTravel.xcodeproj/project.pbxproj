@@ -18,6 +18,9 @@
 		EE5510B125A7950800D77D7C /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5510AF25A7950800D77D7C /* ApiKeys.swift */; };
 		EE5510C025A7981E00D77D7C /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5510BE25A7981E00D77D7C /* FakeResponseData.swift */; };
 		EE5510C125A7981E00D77D7C /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5510BF25A7981E00D77D7C /* URLSessionFake.swift */; };
+		EE743281270633D300064732 /* PresentTranslateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE743280270633D300064732 /* PresentTranslateController.swift */; };
+		EE7886692706273F00163C0E /* TranslateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7886682706273F00163C0E /* TranslateData.swift */; };
+		EE78866B2706295600163C0E /* TranslateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE78866A2706295600163C0E /* TranslateViewModel.swift */; };
 		EE7B00EF259D0F7C00FD5AAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B00EE259D0F7C00FD5AAB /* AppDelegate.swift */; };
 		EE7B00F1259D0F7C00FD5AAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B00F0259D0F7C00FD5AAB /* SceneDelegate.swift */; };
 		EE7B00F6259D0F7C00FD5AAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7B00F4259D0F7C00FD5AAB /* Main.storyboard */; };
@@ -29,6 +32,7 @@
 		EE7B0131259D16F300FD5AAB /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B0130259D16F300FD5AAB /* Rates.swift */; };
 		EE830C0E26FAA6B0004EAC6A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE830C0D26FAA6B0004EAC6A /* DateFormatter.swift */; };
 		EE830C1027000CE2004EAC6A /* TranslateClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE830C0F27000CE2004EAC6A /* TranslateClient.swift */; };
+		EEB5FD532707637300A41B77 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5FD522707637200A41B77 /* UITextView.swift */; };
 		EEC6664125CA33B3008A18D6 /* PresentWeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6664025CA33B3008A18D6 /* PresentWeatherController.swift */; };
 		EEE1186325B65889001E7343 /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE1186225B65889001E7343 /* AlertVC.swift */; };
 		EEE1186B25B65B2D001E7343 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE1186A25B65B2D001E7343 /* Result.swift */; };
@@ -63,6 +67,9 @@
 		EE5510AF25A7950800D77D7C /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		EE5510BE25A7981E00D77D7C /* FakeResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
 		EE5510BF25A7981E00D77D7C /* URLSessionFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
+		EE743280270633D300064732 /* PresentTranslateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentTranslateController.swift; sourceTree = "<group>"; };
+		EE7886682706273F00163C0E /* TranslateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateData.swift; sourceTree = "<group>"; };
+		EE78866A2706295600163C0E /* TranslateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewModel.swift; sourceTree = "<group>"; };
 		EE7B00EB259D0F7C00FD5AAB /* SimpleTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7B00EE259D0F7C00FD5AAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE7B00F0259D0F7C00FD5AAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +87,7 @@
 		EE7B0130259D16F300FD5AAB /* Rates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
 		EE830C0D26FAA6B0004EAC6A /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		EE830C0F27000CE2004EAC6A /* TranslateClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateClient.swift; sourceTree = "<group>"; };
+		EEB5FD522707637200A41B77 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
 		EEC6664025CA33B3008A18D6 /* PresentWeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentWeatherController.swift; sourceTree = "<group>"; };
 		EEE1186225B65889001E7343 /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
 		EEE1186A25B65B2D001E7343 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -115,6 +123,7 @@
 			children = (
 				EEC6664025CA33B3008A18D6 /* PresentWeatherController.swift */,
 				EE2EB85425B3A1B300996206 /* PresentExchangeRateController.swift */,
+				EE743280270633D300064732 /* PresentTranslateController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -124,6 +133,7 @@
 			children = (
 				EE0FAF4725B3640000E753BA /* ExchangeRateViewModel.swift */,
 				EE295B0B25BA0B9800BD6587 /* WeatherViewModel.swift */,
+				EE78866A2706295600163C0E /* TranslateViewModel.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -154,6 +164,7 @@
 		EE55107825A7891900D77D7C /* Translate */ = {
 			isa = PBXGroup;
 			children = (
+				EE7886682706273F00163C0E /* TranslateData.swift */,
 			);
 			path = Translate;
 			sourceTree = "<group>";
@@ -244,8 +255,8 @@
 			children = (
 				EE55107925A78F2C00D77D7C /* NetWorkError.swift */,
 				EE7B012B259D120500FD5AAB /* ExchangeRateService.swift */,
-				EE830C0F27000CE2004EAC6A /* TranslateClient.swift */,
 				EE49371826D674B5001FD414 /* WeatherClient.swift */,
+				EE830C0F27000CE2004EAC6A /* TranslateClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -255,6 +266,7 @@
 			children = (
 				EEE1186225B65889001E7343 /* AlertVC.swift */,
 				EE830C0D26FAA6B0004EAC6A /* DateFormatter.swift */,
+				EEB5FD522707637200A41B77 /* UITextView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -394,17 +406,21 @@
 				EEC6664125CA33B3008A18D6 /* PresentWeatherController.swift in Sources */,
 				EE295B0C25BA0B9800BD6587 /* WeatherViewModel.swift in Sources */,
 				EE0FAF4825B3640000E753BA /* ExchangeRateViewModel.swift in Sources */,
+				EE78866B2706295600163C0E /* TranslateViewModel.swift in Sources */,
 				EE55107A25A78F2C00D77D7C /* NetWorkError.swift in Sources */,
 				EE5510B125A7950800D77D7C /* ApiKeys.swift in Sources */,
 				EE49371926D674B5001FD414 /* WeatherClient.swift in Sources */,
 				EEE1186B25B65B2D001E7343 /* Result.swift in Sources */,
 				EE7B0131259D16F300FD5AAB /* Rates.swift in Sources */,
+				EE743281270633D300064732 /* PresentTranslateController.swift in Sources */,
+				EE7886692706273F00163C0E /* TranslateData.swift in Sources */,
 				EE2EB85525B3A1B300996206 /* PresentExchangeRateController.swift in Sources */,
 				EE830C0E26FAA6B0004EAC6A /* DateFormatter.swift in Sources */,
 				EE7B00EF259D0F7C00FD5AAB /* AppDelegate.swift in Sources */,
 				EE7B012C259D120500FD5AAB /* ExchangeRateService.swift in Sources */,
 				EE2ABA7825BB38290023DBD6 /* WeatherData.swift in Sources */,
 				EE830C1027000CE2004EAC6A /* TranslateClient.swift in Sources */,
+				EEB5FD532707637300A41B77 /* UITextView.swift in Sources */,
 				EEE1186325B65889001E7343 /* AlertVC.swift in Sources */,
 				EE7B00F1259D0F7C00FD5AAB /* SceneDelegate.swift in Sources */,
 			);

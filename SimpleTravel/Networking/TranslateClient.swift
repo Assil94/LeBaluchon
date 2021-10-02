@@ -8,6 +8,7 @@
 import Foundation
 
 class TranslateClient {
+    private let weatherApiKey = valueForAPIKey(named: "googleApiKey")
     static var shared = TranslateClient()
     private init() {}
     private var task: URLSessionDataTask?
@@ -16,11 +17,14 @@ class TranslateClient {
         self.translateClientSession = currencySession
     }
     
-    func getTranslate(city: String, callback: @escaping (Result<CityWeather, Error>) -> Void) {
-//        let baseURL = "https://api.openweathermap.org/"
-//        let path = "data/2.5/"
-//        let param = "weather?q=\(city)&units=metric&lang=fr&appid=\(weatherApiKey)"
-//        guard let weatherURL = URL(string: "\(baseURL)\(path)\(param)") else { return }
+    func getTranslate(sentence: String, callback: @escaping (Result<TranslationText?, Error>) -> Void) {
+        guard let text = sentence.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else
+        { return }
+        let baseURL = "https://translation.googleapis.com/language/translate/v2?"
+        let param = "q=\(text)"
+        let target = "&target=en&format=html&"
+        let source = "source=fr&key=\(weatherApiKey)"
+        guard let weatherURL = URL(string: "\(baseURL)\(param)\(target)\(source)") else { return }
         task?.cancel()
         task = translateClientSession.dataTask(with: weatherURL) { (data, response, error) in
             DispatchQueue.main.async {
@@ -37,12 +41,12 @@ class TranslateClient {
                 }
                 
                 do {
-                    let currencyResponse = try JSONDecoder().decode(CityWeather.self, from: data)
-                    callback(.success(currencyResponse))
-                    print("succes")
+                    let currencyResponse = try JSONDecoder().decode(TranslateResponse.self, from: data)
+                    let currencyData = currencyResponse.data
+                    let currencyText = currencyData.translations.first
+                    callback(.success(currencyText))
                 } catch {
                     callback(.failure(NetWorkError.jsonError))
-                    print("catch")
                 }
             }
         }
