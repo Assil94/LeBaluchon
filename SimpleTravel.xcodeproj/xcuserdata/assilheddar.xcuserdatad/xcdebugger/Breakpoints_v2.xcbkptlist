@@ -679,22 +679,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EDACE681-3839-474D-9C92-A04C371FFAE6"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SimpleTravel/Networking/TranslateClient.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "getTranslate(sentence:callback:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "65DA048A-56F4-40EA-842C-03D34C2E1DB5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -702,9 +686,9 @@
             filePath = "SimpleTravel/Networking/TranslateClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "getTranslate(sentence:callback:)"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "getTranslate(translationBody:callback:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -734,9 +718,9 @@
             filePath = "SimpleTravel/Networking/TranslateClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "getTranslate(sentence:callback:)"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "getTranslate(translationBody:callback:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -750,9 +734,25 @@
             filePath = "SimpleTravel/Networking/TranslateClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "getTranslate(sentence:callback:)"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getTranslate(translationBody:callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EEC187E8-8A3C-4C14-8C77-9DB4B91B80B3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleTravel/Scene/Translate/PresentTranslateController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "translate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

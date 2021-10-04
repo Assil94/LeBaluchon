@@ -32,6 +32,7 @@
 		EE7B0131259D16F300FD5AAB /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B0130259D16F300FD5AAB /* Rates.swift */; };
 		EE830C0E26FAA6B0004EAC6A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE830C0D26FAA6B0004EAC6A /* DateFormatter.swift */; };
 		EE830C1027000CE2004EAC6A /* TranslateClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE830C0F27000CE2004EAC6A /* TranslateClient.swift */; };
+		EEAB2CB1270A796B00767926 /* Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB2CB0270A796B00767926 /* Translate.swift */; };
 		EEB5FD532707637300A41B77 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5FD522707637200A41B77 /* UITextView.swift */; };
 		EEC6664125CA33B3008A18D6 /* PresentWeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6664025CA33B3008A18D6 /* PresentWeatherController.swift */; };
 		EEE1186325B65889001E7343 /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE1186225B65889001E7343 /* AlertVC.swift */; };
@@ -87,6 +88,7 @@
 		EE7B0130259D16F300FD5AAB /* Rates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
 		EE830C0D26FAA6B0004EAC6A /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		EE830C0F27000CE2004EAC6A /* TranslateClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateClient.swift; sourceTree = "<group>"; };
+		EEAB2CB0270A796B00767926 /* Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translate.swift; sourceTree = "<group>"; };
 		EEB5FD522707637200A41B77 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
 		EEC6664025CA33B3008A18D6 /* PresentWeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentWeatherController.swift; sourceTree = "<group>"; };
 		EEE1186225B65889001E7343 /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
@@ -118,22 +120,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EE0FAF4525B3635600E753BA /* Controller */ = {
+		EE0D15702708912900906F54 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
 				EEC6664025CA33B3008A18D6 /* PresentWeatherController.swift */,
-				EE2EB85425B3A1B300996206 /* PresentExchangeRateController.swift */,
-				EE743280270633D300064732 /* PresentTranslateController.swift */,
+				EE295B0B25BA0B9800BD6587 /* WeatherViewModel.swift */,
 			);
-			path = Controller;
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		EE0D15712708913500906F54 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				EE743280270633D300064732 /* PresentTranslateController.swift */,
+				EE78866A2706295600163C0E /* TranslateViewModel.swift */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		EE0D15722708913E00906F54 /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				EE2EB85425B3A1B300996206 /* PresentExchangeRateController.swift */,
+				EE0FAF4725B3640000E753BA /* ExchangeRateViewModel.swift */,
+			);
+			path = Exchange;
 			sourceTree = "<group>";
 		};
 		EE0FAF4625B3636300E753BA /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				EE0FAF4725B3640000E753BA /* ExchangeRateViewModel.swift */,
-				EE295B0B25BA0B9800BD6587 /* WeatherViewModel.swift */,
-				EE78866A2706295600163C0E /* TranslateViewModel.swift */,
+				EE7B00F4259D0F7C00FD5AAB /* Main.storyboard */,
+				EE0D15722708913E00906F54 /* Exchange */,
+				EE0D15712708913500906F54 /* Translate */,
+				EE0D15702708912900906F54 /* Weather */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -164,6 +184,7 @@
 		EE55107825A7891900D77D7C /* Translate */ = {
 			isa = PBXGroup;
 			children = (
+				EEAB2CB0270A796B00767926 /* Translate.swift */,
 				EE7886682706273F00163C0E /* TranslateData.swift */,
 			);
 			path = Translate;
@@ -214,11 +235,9 @@
 			children = (
 				EEE1186125B6587D001E7343 /* Extension */,
 				EE0FAF4625B3636300E753BA /* Scene */,
-				EE0FAF4525B3635600E753BA /* Controller */,
 				EE55107625A787CA00D77D7C /* Supporting Files */,
 				EE7B012A259D11EA00FD5AAB /* Networking */,
 				EE7B0121259D0F9400FD5AAB /* Model */,
-				EE7B00F4259D0F7C00FD5AAB /* Main.storyboard */,
 			);
 			path = SimpleTravel;
 			sourceTree = "<group>";
@@ -420,6 +439,7 @@
 				EE7B012C259D120500FD5AAB /* ExchangeRateService.swift in Sources */,
 				EE2ABA7825BB38290023DBD6 /* WeatherData.swift in Sources */,
 				EE830C1027000CE2004EAC6A /* TranslateClient.swift in Sources */,
+				EEAB2CB1270A796B00767926 /* Translate.swift in Sources */,
 				EEB5FD532707637300A41B77 /* UITextView.swift in Sources */,
 				EEE1186325B65889001E7343 /* AlertVC.swift in Sources */,
 				EE7B00F1259D0F7C00FD5AAB /* SceneDelegate.swift in Sources */,

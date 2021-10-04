@@ -9,8 +9,8 @@ import Foundation
 
 class TranslateViewModel {
     var translatedTextHandler: (_ translatedText: String?) -> Void = { _  in }
-    func getTranslate(sentence: String) {
-        TranslateClient.shared.getTranslate(sentence: sentence) { result in
+    func getTranslate(param: Translate) {
+        TranslateClient.shared.getTranslate(translationBody: param) { result in
             switch result {
             case .success(let text):
                 self.translatedTextHandler(text?.translatedText)
@@ -19,5 +19,4 @@ class TranslateViewModel {
             }
         }
     }
-
 }
