@@ -23,8 +23,9 @@ class WeatherViewModel {
                 let tempMin = String(first.tempMin)
                 let tempMax = String(first.tempMax)
                 let feelsLike = String(first.feelsLike)
-                let description = ""
-                let weatherInformation = WeatherInformation(temperature: temperature, tempMax: tempMax, tempMin: tempMin, feelsLike: feelsLike, description: description)
+                let description = String(weather.weather.first!.description)
+                let icon = String(weather.weather.first!.icon)
+                let weatherInformation = WeatherInformation(temperature: temperature, tempMax: tempMax, tempMin: tempMin, feelsLike: feelsLike, description: description, icon: icon)
                 self.weatherHandler(weatherInformation)
             }
         }
@@ -37,4 +38,5 @@ struct WeatherInformation {
     let tempMin: String
     let feelsLike: String
     let description: String
+    let icon: String
 }

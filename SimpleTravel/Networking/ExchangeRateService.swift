@@ -23,7 +23,7 @@ class ExchangeRateService {
     func getExchangeRate(callback: @escaping (Result<Rates, Error>) -> Void) {
         let baseURL = "http://data.fixer.io"
         let path = "/api/latest?"
-        let param = "access_key=\(exchangeRateKey)&base=EUR&symbols=EUR,USD"
+        let param = "access_key=\(exchangeRateKey)&base=EUR&symbols=USD"
         guard let exchangeRateUrl = URL(string: "\(baseURL)\(path)\(param)") else { return }
         
         task?.cancel()

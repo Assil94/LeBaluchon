@@ -30,10 +30,11 @@ class PresentWeatherController: UIViewController {
             guard let me = self else { return }
             let day = Date()
             me.dayLabel.text = day.formatted(dateFormat: "EEEE dd MMMM").capitalized
-            me.weatherLabel.text = weather.temperature
-            me.tempMinLabel.text = weather.tempMin
-            me.tempMaxLabel.text = weather.tempMax
-            me.feelsLikeLabel.text = weather.feelsLike
+            me.weatherLabel.text = "\(weather.temperature)°"
+            me.tempMinLabel.text = "\(weather.tempMin)° temperature minimum"
+            me.tempMaxLabel.text = "\(weather.tempMax)° temperature maximum"
+            me.feelsLikeLabel.text = "\(weather.feelsLike) temperature ressentie"
+            me.descriptionLabel.text = weather.description
         }
     }
 }

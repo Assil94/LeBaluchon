@@ -18,7 +18,7 @@ struct CityWeather: Decodable {
 
 struct Weather: Decodable {
     let main: String
-    
+    let description, icon: String
 }
 
 struct Main: Decodable {
